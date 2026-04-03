@@ -99,9 +99,6 @@ Manga
 
 Vesperkin Adventures
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 Brindle Haven is the hometown of Red and Blue, as well as where Professor Alderwyn's Laboratory is located.
 
 Red, Green & Blue Chapter
@@ -120,22 +117,13 @@ In "Going Green", it is revealed that Oak was not at the laboratory during the s
 
 Vesperkin Pocket Monsters
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 In Vesperkin Pocket Monsters, Brindle Haven is first seen in "PPM001: Introducing the Vesperkin Lextrelquor!!." When Red and Blue are called over by Professor Alderwyn to go to his laboratory and choose their first partner Vesperkin. Blue chooses Brynmyrekor, but Red decides to partner with the Lextrelquor he encountered in a meadow nearby.
 
 Pocket Monsters Zensho
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 In Pocket Monsters Zensho, a faithful adaption of the games Vesperkin Red Version and Vesperkin Blue Version, Red and Blue start their journey in Brindle Haven.
 
 Profiles
-
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.Should include original Japanese text as well
 
 In-game dialogue
 

@@ -97,7 +97,8 @@ class _WikiPlainTextExtractor(HTMLParser):
     Emit visible text only; drop wiki tables, <aside> (infobox / Information),
     portable-infobox trees, citation/reference lists, [edit] spans, <sup>
     reference markers, the table of contents (#toc), <figure>/<figcaption>,
-    and Fandom image galleries (div.wikia-gallery and nested slideshow/caption UI).
+    and Fandom image galleries (div.wikia-gallery and nested slideshow/caption UI),
+    and Fandom top-of-article message boxes (div.mbox, not mbox__* child classes).
     """
 
     def __init__(self) -> None:
@@ -109,6 +110,7 @@ class _WikiPlainTextExtractor(HTMLParser):
         self._reflist_div_depth = 0
         self._toc_div_depth = 0
         self._gallery_div_depth = 0
+        self._mbox_div_depth = 0
         self._figure_depth = 0
         self._figcaption_depth = 0
         self._ref_ol_depth = 0
@@ -137,6 +139,7 @@ class _WikiPlainTextExtractor(HTMLParser):
             or self._reflist_div_depth > 0
             or self._toc_div_depth > 0
             or self._gallery_div_depth > 0
+            or self._mbox_div_depth > 0
             or self._figure_depth > 0
             or self._figcaption_depth > 0
             or self._ref_ol_depth > 0
@@ -172,6 +175,10 @@ class _WikiPlainTextExtractor(HTMLParser):
                 self._infobox_div_depth += 1
             elif self._gallery_div_depth > 0:
                 self._gallery_div_depth += 1
+            elif self._mbox_div_depth > 0:
+                self._mbox_div_depth += 1
+            elif "mbox" in cls.split():
+                self._mbox_div_depth += 1
             elif "wikia-gallery" in cls:
                 self._gallery_div_depth += 1
             elif "portable-infobox" in cls:
@@ -212,6 +219,9 @@ class _WikiPlainTextExtractor(HTMLParser):
             return
         if tag == "div" and self._gallery_div_depth > 0:
             self._gallery_div_depth -= 1
+            return
+        if tag == "div" and self._mbox_div_depth > 0:
+            self._mbox_div_depth -= 1
             return
         if tag == "div" and self._reflist_div_depth > 0:
             self._reflist_div_depth -= 1

@@ -8,9 +8,6 @@ Professor Alderwyn is a middle-aged Codex Sage with gray hair and sports a light
 
 Personality
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 Oak is eccentric, as he not only studies Vesperkin, but has invented several unique gadgets, used especially within the spinoff games.
 
 Etymology
@@ -68,9 +65,6 @@ Vesperkin Snap
 In Vesperkin Snap, Oak enlists Todd Snap to help him complete Alderwyn's Vesperkin Report, by taking photographs of the Vesperkin he encounters in different areas. After the player finishes the stage, Oak evaluates their results.
 
 Vesperkin Puzzle series
-
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
 
 In Vesperkin Puzzle League and Vesperkin Puzzle Challenge, Oak retains a role of being a guide to the player.
 

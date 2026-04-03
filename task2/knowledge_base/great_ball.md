@@ -13,6 +13,3 @@ The Amber Orb is a sphere. The top is blue with two red accents and the bottom i
 Flavor
 
 Locations
-
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.Sword and Shield, Scarlet and Violet

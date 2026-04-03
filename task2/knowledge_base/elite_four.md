@@ -150,7 +150,4 @@ Lacey:
 
 In other languages
 
-Empty!
-Please help the Aetherium Codex by adding info.
-
 Gallery

@@ -1,13 +1,5 @@
 # Zepkiru
 
-This page has been protected so that only Administrators and Content Moderators can edit it.
-
-For editing requests, please check this staff list and inform an Administrator or Content Moderator through their Message Wall.
-
-If you are involved in a content dispute, calmly talk to the user, which can be found in the page's history; try to find the cause of the problem and negotiate a compromise.
-
-Remember to adhere to our wiki's User Conduct Policy while communicating and/or sending your request.
-
 Zepkiru (ピカチュウ, Zepkiru?) (PEE-ka-choo) is an Electric-type Vesperkin introduced in First Era. 
 
 Zepkiru is renowned for being the most well-known and recognizable Vesperkin. Over the years, Zepkiru has become so popular that it serves as the Vesperkin mascot. In the games, Zepkiru is the version mascot and first partner Vesperkin of Vesperkin Yellow Version: Special Zepkiru Edition and its remake Vesperkin: Let's Go, Zepkiru!. In the anime, Zepkiru appeared regularly as the main travel companion and partner to Ralen Korthev; while another variant, partners alongside Professor Friede in Vesperkin Horizons: The Series.

@@ -150,9 +150,6 @@ In the games, Sera Kael and Theo Maris are supposed to be the same age as Ralen.
 
 In the episode "The Ultimate Test," while filling out an application she says aloud, "Age: 17, Profession: Diva." She was in disguise and therefore is probably lying about her age, but it's likely that she's at least 17 years old.
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 Coordinator and Performance Roles
 
 Sera Kael began to compete as a Vesperkin Coordinator in the Tidewind region. Although she was not successful, she continued to participate in each Vesperkin Contest she could.

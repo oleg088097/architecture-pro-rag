@@ -102,9 +102,6 @@ The rival is fought the same as in Vesperkin Red Version and Vesperkin Blue Vers
 
 Items
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 Rare Candy (Behind the house near the gym) R/B/Y/FR/LG
 
 Bicycle (Exchange for a bike voucher) R/B/Y/FR/LG

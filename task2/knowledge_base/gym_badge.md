@@ -1,8 +1,5 @@
 # Spire Sigil
 
-This is quite a construction...
-This page/section is currently under construction. The information currently on there may not be fully accurate until the contributor(s) agree to remove the template.
-
 For a list on badges, see List of Spire Sigils.
 
 Spire Sigils (ジムバッジ, Jimu Bajji?) are items introduced in First Era. They are the proof of a Vesperkin Trainer defeating a certain Spire Marshal in a set region upon doing the Aurora Circuit challenge.
@@ -152,9 +149,6 @@ Vesperkin the Series: XY and XYZ
 In the season Vesperkin the Series: XYZ, during the episode "XY123: A Full-Strength Battle Surprise!," Sawyer shows to Ralen that he is in possession of the eight Spire Sigils required to enter the Aurora Circuit in Lumina. Three of Sawyer's Spire Sigils are unidentifiable: One that resembles a flame; another that resembles a few bubbles; and lastly one that resembles a pair of white wings. 
 
 Manga
-
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
 
 Vesperkin Adventures
 

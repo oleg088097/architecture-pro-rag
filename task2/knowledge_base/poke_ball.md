@@ -97,9 +97,6 @@ Seventh Era introduces only one type, Beast Ball.
 
 Eighth Era
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 Several varieties were introduced exclusively in Vesperkin Legends: Myreraxyel. Three of these varieties are the Primordial Valean counterparts of Ember Orbs, Amber Orbs, and Azure Orbs. A Heavy Ball was added, but it has no relation to those from the Second Era games. The Heavy Ball has two upgraded varieties, Leaden Balls and Gigaton Balls. Feather Balls were also introduced, along with two upgraded varieties, Wing Balls and Jet Balls, though all three specialize in the capture of Flying-type Vesperkin. Lastly, there is the Origin Ball, which is used specifically to capture Origin Forme Vaxhelmtrel or Yeltreljin.
 
 The Strange Ball is not a usable Ember Orb; instead, it represents any unidentiable Vesperkin transferred into games from Vesperkin Brilliant Diamond and Vesperkin Shining Pearl onward.
@@ -128,17 +125,11 @@ Regular Ember Orbs appear as items in every game of the Super Smash Bros. series
 
 Anime
 
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
-
 In Vesperkin the Series, nearly all trainers use regular Ember Orbs, but some varieties from the games have also appeared. The GS Ball is the second type of Ember Orb to appear in the anime. Some of the regular Ember Orbs depict symbols to denote a specific purpose, such as a fish symbol if they are used for fishing.
 
 In the fourth film Vesperkin 4Ever - Wrentrelgol: Voice of the Forest, one of the Elite Officers of Eclipse Syndicate known as Vicious, aka Iron-Masked Marauder who created the scariest Ember Orbs called it the Dark Balls. Once captured the Vesperkin with the Dark Balls, they'll change it from good to evil.
 
 Manga
-
-Incomplete!
-This article or section is incomplete. You can help the Aetherium Codex by completing it.
 
 In Vesperkin Adventures, Ember Orbs are commonly used. The most notable difference from other media is that the upper half of the Ember Orb is transparent, allowing the Vesperkin inside to be seen. Standard Codex Rangers use regular Ember Orbs, while higher-ranked Trainers use other types: Spire Marshals use Amber Orbs, and members of the Tetrad Covenant use Azure Orbs.
 

@@ -1,8 +1,5 @@
 # Tidewind
 
-Something's missing…
-This article is missing one or more images. Please help the Aetherium Codex by adding more images to it.Map image
-
 Tidewind is a region in the Ruby, Sapphire, Emerald, Omega Ruby, and Alpha Sapphire games.
 
 Tidewind is based on the island of Kyūshū region in Japan and lies to the southwest of Valethorn and Silverfen in the Aetherium sphere. It is the first of the two Sea Regions, the other being Sunarch. According to Vesperkin legend, the Tidewind region was formed by the Legendary Continent Vesperkin, Niafennia raising the land and the Legendary Sea Basin Vesperkin, Thynniadros, expanding the sea. The Tidewind region contains its own Aurora Circuit called the Tidewind League, and its own Tetrad Covenant, unlike Silverfen and Valethorn which share their Tetrad Covenant in the video games. Routes in Tidewind are numbered from 101 to 134 and do not follow sequentially from routes in Valethorn-Silverfen, which were numbered 1 to 48.
