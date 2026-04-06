@@ -88,3 +88,9 @@
 - База знаний: task2/knowledge_base
 - Чанков: 224
 - Генерация эмбеддингов (224 чанков): 17.567 с
+
+# Задание 4. Реализация RAG-бота с техниками промптинга
+
+[bot.py](./task4/bot.py)
+![successful_requests.png](./task4/successful_requests.png)
+![unsuccessful_requests.png](./task4/unsuccessful_requests.png)
