@@ -1,4 +1,6 @@
+import asyncio
 import logging
+import os
 from pathlib import Path
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
@@ -23,6 +25,8 @@ ROOT = Path(__file__).resolve().parent
 DEFAULT_CHROMA_DIR = ROOT.parent / "task3" / "chroma_data"
 COLLECTION_NAME = "pokemon_kb"
 EMBEDDING_MODEL_ID = "BAAI/bge-m3"
+YANDEX_CLOUD_FOLDER = "b1g2r7eamr6695lvqdmp"
+YANDEX_CLOUD_MODEL = "deepseek-v32/latest"
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -35,18 +39,19 @@ vector_store = Chroma(
     persist_directory=DEFAULT_CHROMA_DIR,
 )
 retriever = VectorStoreRetriever(vectorstore=vector_store)
-model = ChatYandexGPT(folder_id='b1g2r7eamr6695lvqdmp')
+model = ChatYandexGPT(folder_id=YANDEX_CLOUD_FOLDER, model_id=YANDEX_CLOUD_MODEL)
 
 class SafetyGuardrailMiddleware(AgentMiddleware):
     """Model-based guardrail: Use an LLM to evaluate response safety."""
 
     def __init__(self):
         super().__init__()
-        self.safety_model = ChatYandexGPT(folder_id='b1g2r7eamr6695lvqdmp')
+        self.safety_model = ChatYandexGPT(folder_id=YANDEX_CLOUD_FOLDER, model_id=YANDEX_CLOUD_MODEL)
 
 
     @hook_config(can_jump_to=["end"])
     def after_agent(self, state: AgentState, runtime) -> dict[str, Any] | None:
+        print('safety')
         # Get the final AI response
         if not state["messages"]:
             return None
@@ -111,13 +116,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Ask questions for knowledge base")
 
 async def question(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    response = await agent.ainvoke({"input": update.message.text})
+    response = agent.invoke({"input": update.message.text})
     answer = response["messages"][-1].content
     await context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
-    #await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('8606982896:AAGBD5sARdNuK1KPcoJZnZOJL2Ea9EvxY0M').build()
+    application = ApplicationBuilder().token(os.environ["TG_BOT_TOKEN"]).build()
     
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
