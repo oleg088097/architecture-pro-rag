@@ -114,3 +114,20 @@
 
 ### Отказы или фильтрованные ситуации
 ![unsafe_requests.png](./task5/unsafe_requests.png)
+
+# Задание 6. Автоматическое ежедневное обновление базы знаний
+
+В качестве базы знаний используем директорию из Задания 2 [./task2/knowledge_base](./task2/knowledge_base)
+
+###  Скрипт обновления: [./task6/update.sh](task6/update.sh)
+
+### Периодический запуск выполняется через cron скриптом [./task6/update_cron.sh](./task6/update_cron.sh):
+```cron
+0 6 * * * /home/oleg088097/projects/architecture-pro-rag/task6/update_cron.sh >> /home/oleg088097/projects/architecture-pro-rag/task6/logs/cron.log 2>&1
+```
+Лог записывается в файл cron.log, результаты в файлы в папке ./task6/logs (см. примеры в папке).
+Состояние файлов на последний запуск хранится в файле ./task6/kb_sync_state.json
+
+Задача запускается раз в сутки, например в 06:00. При ошибке задача завершается и в логе остаётся соответствующая запись.  
+
+### Архитектурная диаграмма: [task6/architecture.puml](task6/architecture.puml)
