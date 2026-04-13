@@ -1,0 +1,45 @@
+@startuml
+!theme plain
+
+title Задание 6. Автоматическое ежедневное обновление базы знаний
+
+component [Cron] as Cron
+
+folder "task2/knowledge_base" as SourceFolder {
+    [Файлы .md\nОбновляются внешним процессом]
+}
+
+component [Script \ntask6/update_cron.sh] as CronScript
+component [Script \ntask6/update.sh] as UpdateScript
+component [Script \ntask6/kb_state.py] as StateScript
+component [Script \ntask3/build_index.py] as BuildIndexScript
+
+component [Чанки] as Chunks
+component [Список изменений] as ChangeList
+component [Эмбеддинги] as Embeddings
+
+database ChromaDB {
+  folder "task3/chroma_data" {
+    [Индекс]
+  }
+}
+
+folder "Логи" {
+  file "task6/logs/update_<stamp>.log" as RunLogs
+  file "task6/logs/cron.log" as CronLogs
+}
+
+Cron --> CronScript : запуск скрипта по распиcанию, например в 06:00
+CronScript --> UpdateScript
+SourceFolder --> StateScript : сканирование изменений
+StateScript --> ChangeList : создание списка изменений
+ChangeList --> UpdateScript : чтение списка изменений
+Cron --> CronLogs : логи запуска
+UpdateScript --> RunLogs : результат запуска (даты, изменений, чанки, ошибки)
+UpdateScript --> BuildIndexScript : отправка файлов на пересборку индекса
+BuildIndexScript --> Chunks : входные файлы разбиваются на чанки
+Chunks --> Embeddings : модель собирает эмбеддинги из чанков
+Embeddings --> ChromaDB : эмбеддинги записываются в индекс
+
+
+@enduml

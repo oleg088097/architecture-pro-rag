@@ -1,0 +1,36 @@
+@startuml rag_request_and_evaluation_sequence
+!theme plain
+
+title Задание 7. Аналитика покрытия и качества базы знаний
+
+participant Knowledge_Base
+actor User
+database Chroma
+
+Knowledge_Base -> Chroma : Предварительная генерация индексов для базы знаний
+
+User -> Chroma : Поиск в индексе чанков, соответствующих запросу
+
+alt Пустой, недоступный индекс, невалидные чанки
+  Chroma --> System_Prompt : нет (мало) документов для контекста, нет ответа или неполный ответ
+else Найдены фрагменты
+  Chroma --> System_Prompt : релевантные чанки
+end
+
+System_Prompt -> Response_Model : правила и пример ответа +\nконтекст из чанков +\nвопрос пользователя
+
+alt Ошибка генерации (ошибка API, таймаут, лимиты)
+  Response_Model --> User : нет или обрыв ответа
+else Ответ модели
+  Response_Model -> Safety_Model : ответ для валидации
+end
+
+alt Ошибка валидации (ошибка API, таймаут, лимиты)
+  Safety_Model --> User : нет или обрыв ответа
+else Ответ небезопасен
+  Safety_Model --> User : безопасная замена - может быть менее полезной или бесполезной в зависимости от правил коррекции ответа
+else Ответ допустим
+  Safety_Model --> User : финальный ответ
+end
+
+@enduml

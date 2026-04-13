@@ -1,0 +1,7 @@
+langchain-text-splitters>=0.2.0
+langchain-chroma>=0.1.2
+langchain>=1.2.15
+langchain_core>=1.2.26
+langchain_huggingface>=1.2.1
+yandexcloud
+langchain-community

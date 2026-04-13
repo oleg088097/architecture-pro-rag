@@ -1,0 +1,6 @@
+started_at: 2026-04-12T09:22:03Z
+finished_at: 2026-04-12T09:22:03Z
+summary: kb_state.py scan failed (exit 1)
+
+errors:
+  Каталог не найден: /home/oleg088097/projects/architecture-pro-rag/task2/knowledge_base

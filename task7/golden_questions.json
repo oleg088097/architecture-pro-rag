@@ -1,0 +1,78 @@
+{
+  "description": "Золотой набор для оценки покрытия KB (Vesperkin / Valethorn). expect=answer — в базе есть материал; expect=abstain — темы, которых нет в knowledge_base (регионы Unova/Kalos/Paldea, виды Magikarp/Rayquaza и т.д.; в .md не встречаются).",
+  "items": [
+    {
+      "id": "k01",
+      "question": "Какого типа Vesperkin Zepkiru?",
+      "expect": "answer",
+      "must_mention": ["Zepkiru", "Electric"]
+    },
+    {
+      "id": "k02",
+      "question": "Кто возглавляет организацию Eclipse Syndicate?",
+      "expect": "answer",
+      "must_mention": ["Vance Korrel"]
+    },
+    {
+      "id": "k03",
+      "question": "Как называется регион, который в серии игр смоделирован по японскому региону Канто?",
+      "expect": "answer",
+      "must_mention": ["Valethorn"]
+    },
+    {
+      "id": "k04",
+      "question": "Из чего был создан Orphic Null по сюжету вселенной?",
+      "expect": "answer",
+      "must_mention": ["Raxvelyel"]
+    },
+    {
+      "id": "k05",
+      "question": "Как называется родной город Ralen Korthev?",
+      "expect": "answer",
+      "must_mention": ["Brindle Haven"]
+    },
+    {
+      "id": "k06",
+      "question": "Кто третий участник тройки Eclipse Syndicate trio вместе с Sera Kael и Theo Maris?",
+      "expect": "answer",
+      "must_mention": ["Whiskalk"]
+    },
+    {
+      "id": "k07",
+      "question": "Какого типа был Whiskalk при введении в First Era?",
+      "expect": "answer",
+      "must_mention": ["Whiskalk", "Normal"]
+    },
+    {
+      "id": "k08",
+      "question": "Где в играх можно найти Orphic Null после того, как игрок стал чемпионом региона Valethorn?",
+      "expect": "answer",
+      "must_mention": ["Cerulean"]
+    },
+    {
+      "id": "u01",
+      "question": "Как устроен регион Harmonia в играх про Vesperkin: какие там ключевые города и кто чемпион лиги?",
+      "expect": "abstain"
+    },
+    {
+      "id": "u02",
+      "question": "Какого типа Vesperkin Cairvaxthyn, во что он эволюционирует и на каком уровне?",
+      "expect": "abstain"
+    },
+    {
+      "id": "u03",
+      "question": "Кто является чемпионом региона Kalos в основной линии игр Vesperkin?",
+      "expect": "abstain"
+    },
+    {
+      "id": "u04",
+      "question": "Опиши типы, способности и роль легендарного Vesperkin Niayeltrel в сюжете серии.",
+      "expect": "abstain"
+    },
+    {
+      "id": "u05",
+      "question": "Какие три стартовых Vesperkin предлагаются игроку в регионе Amberreach и кто их профессор?",
+      "expect": "abstain"
+    }
+  ]
+}
