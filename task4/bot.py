@@ -1,11 +1,9 @@
 import logging
+import os
 from pathlib import Path
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
 from langchain_chroma import Chroma
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai import ChatOpenAI
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.agents import AgentState, create_agent
 from langchain.agents.middleware import before_model, after_model
@@ -52,7 +50,7 @@ def get_context(state, runtime):
         "Example 2:"
         "Q: Who are the members of Eclipse Syndicate trio?"
         "A: <thinking>1. Examining the documents for Eclipse Syndicate trio. 2. Documents state that Eclipse Syndicate trio is a most recurring members of Eclipse Syndicate and consist of Sera Kael, Theo Maris and Whiskalk. 3. Answer - Sera Kael, Theo Maris and Whiskalk.</thinking>Eclipse Syndicate trio members are Sera Kael, Theo Maris and Whiskalk"
-        f"Context: {context}"   # <--- add the retrieved context here
+        f"Context: {context}"
     )
     messages = [
         ("system", system_prompt),
@@ -77,7 +75,7 @@ async def question(update: Update, context: ContextTypes.DEFAULT_TYPE):
     #await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('8606982896:AAGBD5sARdNuK1KPcoJZnZOJL2Ea9EvxY0M').build()
+    application = ApplicationBuilder().token(os.environ["TG_BOT_TOKEN"]).build()
     
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)

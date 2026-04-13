@@ -1,4 +1,3 @@
-import asyncio
 import logging
 import os
 from pathlib import Path
@@ -98,7 +97,7 @@ def get_context(state, runtime):
         "Q: Who are the members of Eclipse Syndicate trio?"
         "A: <thinking>1. Examining the documents for Eclipse Syndicate trio. 2. Documents state that Eclipse Syndicate trio is a most recurring members of Eclipse Syndicate and consist of Sera Kael, Theo Maris and Whiskalk. 3. Answer - Sera Kael, Theo Maris and Whiskalk.</thinking>Eclipse Syndicate trio members are Sera Kael, Theo Maris and Whiskalk"
         "[CONTEXT]"
-        f"{context}"   # <--- add the retrieved context here
+        f"{context}"
     )
     messages = [
         ("system", system_prompt),
