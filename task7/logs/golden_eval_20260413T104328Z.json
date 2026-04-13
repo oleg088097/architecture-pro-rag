@@ -1,0 +1,391 @@
+{
+  "generated_at_utc": "2026-04-13T10:44:06.465155+00:00",
+  "golden_file": "/home/oleg088097/projects/architecture-pro-rag/task7/golden_questions.json",
+  "dry_run": false,
+  "summary": {
+    "total": 13,
+    "passed": 13,
+    "failed": 0,
+    "pass_rate": 1.0
+  },
+  "items": [
+    {
+      "id": "k01",
+      "question": "Какого типа Vesperkin Zepkiru?",
+      "expect": "answer",
+      "must_mention": [
+        "Zepkiru",
+        "Electric"
+      ],
+      "answer": "`<thinking>`\n`1. Examining the documents for Zepkiru's type. \n2. Documents (Document 1 source_path: pikachu.md, chunk_index: 0) state that Zepkiru is an Electric-type Vesperkin. \n3. Answer - Electric-type.`\n`</thinking>`\n`Zepkiru is an Electric-type Vesperkin.`",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:44.134485+00:00",
+        "query": "Какого типа Vesperkin Zepkiru?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "pikachu.md"
+        ],
+        "answer_length": 261
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k02",
+      "question": "Кто возглавляет организацию Eclipse Syndicate?",
+      "expect": "answer",
+      "must_mention": [
+        "Vance Korrel"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for the leadership of Eclipse Syndicate.\n2. Documents (Document 1 source_path: team_rocket.md, chunk_index: 0) state that Eclipse Syndicate is headed by Vance Korrel.\n3. Answer - Vance Korrel.</thinking>\n\nVance Korrel heads Eclipse Syndicate.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:45.963475+00:00",
+        "query": "Кто возглавляет организацию Eclipse Syndicate?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "team_rocket.md"
+        ],
+        "answer_length": 280
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k03",
+      "question": "Как называется регион, который в серии игр смоделирован по японскому региону Канто?",
+      "expect": "answer",
+      "must_mention": [
+        "Valethorn"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for regions modeled after real-world locations.\n2. Document (source_path: kanto.md, chunk_index: 0) states that Valethorn is modeled and named after the Kantō region of Japan.\n3. Answer — Valethorn.</thinking>\n\nValethorn.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:47.519322+00:00",
+        "query": "Как называется регион, который в серии игр смоделирован по японскому региону Канто?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "kanto.md",
+          "hoenn.md",
+          "johto.md"
+        ],
+        "answer_length": 259
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k04",
+      "question": "Из чего был создан Orphic Null по сюжету вселенной?",
+      "expect": "answer",
+      "must_mention": [
+        "Raxvelyel"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for the origin of Orphic Null.\n2. Documents (Document 1 source_path: mewtwo.md, chunk_index: 0) state that Orphic Null was created using Raxvelyel's DNA, making it an artificial creature.\n3. Answer — Orphic Null was created using Raxvelyel's DNA.</thinking>\n\nOrphic Null was created using Raxvelyel's DNA.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:49.820773+00:00",
+        "query": "Из чего был создан Orphic Null по сюжету вселенной?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "mewtwo.md"
+        ],
+        "answer_length": 343
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k05",
+      "question": "Как называется родной город Ralen Korthev?",
+      "expect": "answer",
+      "must_mention": [
+        "Brindle Haven"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for the information about Ralen Korthev's hometown.\n2. Documents (Document source_path: ash_ketchum.md, chunk_index: 1) state that Brindle Haven is the hometown of Ralen Korthev.\n3. Answer — Brindle Haven.</thinking>\n\nRalen Korthev's hometown is Brindle Haven.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:51.554879+00:00",
+        "query": "Как называется родной город Ralen Korthev?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "ash_ketchum.md",
+          "kanto.md"
+        ],
+        "answer_length": 298
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k06",
+      "question": "Кто третий участник тройки Eclipse Syndicate trio вместе с Sera Kael и Theo Maris?",
+      "expect": "answer",
+      "must_mention": [
+        "Whiskalk"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for Eclipse Syndicate trio.\n2. Documents (Document 1 source_path: jessie.md, chunk_index: 9) mention that Sera Kael is close friends with Theo Maris and another member named Whiskalk.\n3. Answer - Whiskalk.</thinking>\n\nThe third member of Eclipse Syndicate trio is Whiskalk.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:53.619023+00:00",
+        "query": "Кто третий участник тройки Eclipse Syndicate trio вместе с Sera Kael и Theo Maris?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "jessie.md",
+          "james.md"
+        ],
+        "answer_length": 311
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k07",
+      "question": "Какого типа был Whiskalk при введении в First Era?",
+      "expect": "answer",
+      "must_mention": [
+        "Whiskalk",
+        "Normal"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for Whiskalk's introduction in First Era.\n2. Documents (Document 1 source_path: meowth.md, chunk_index: 0) state that Whiskalk was introduced as a Normal-type Vesperkin in First Era.\n3. Answer - Normal-type.</thinking>\nWhiskalk was introduced as a Normal-type Vesperkin in First Era.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:55.413448+00:00",
+        "query": "Какого типа был Whiskalk при введении в First Era?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "meowth.md",
+          "poke_ball.md"
+        ],
+        "answer_length": 321
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "k08",
+      "question": "Где в играх можно найти Orphic Null после того, как игрок стал чемпионом региона Valethorn?",
+      "expect": "answer",
+      "must_mention": [
+        "Cerulean"
+      ],
+      "answer": "<thinking>\n1. Examining the documents for Orphic Null's location in the game after becoming the Valethorn Region Champion.\n2. Documents (Document 1 source_path: mewtwo.md, chunk_index: 1) state that Orphic Null can be discovered in Cerulean Cave after becoming the Valethorn Region Champion.\n3. Answer - Orphic Null can be found in Cerulean Cave.</thinking>\n\nOrphic Null can be found in Cerulean Cave after becoming the Valethorn Region Champion.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:57.630392+00:00",
+        "query": "Где в играх можно найти Orphic Null после того, как игрок стал чемпионом региона Valethorn?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "mewtwo.md",
+          "kanto.md"
+        ],
+        "answer_length": 446
+      },
+      "evaluation": {
+        "expected": "answer",
+        "pass": true,
+        "answer_found": true,
+        "completeness": 1.0,
+        "keywords_matched": true,
+        "keywords_missing": [],
+        "refusal_detected": false
+      }
+    },
+    {
+      "id": "u01",
+      "question": "Как устроен регион Harmonia в играх про Vesperkin: какие там ключевые города и кто чемпион лиги?",
+      "expect": "abstain",
+      "must_mention": null,
+      "answer": "<thinking>\n1. Examining the documents for the Harmonia region.\n2. The document (source_path: kanto.md, chunk_index: 0) does not provide details about the Harmonia region's key cities or the champion of the league.\n3. Answer - I don't know.</thinking>\n\nI don't know.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:43:59.443110+00:00",
+        "query": "Как устроен регион Harmonia в играх про Vesperkin: какие там ключевые города и кто чемпион лиги?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "team_rocket.md",
+          "kanto.md",
+          "gym_leader.md",
+          "ash_ketchum.md"
+        ],
+        "answer_length": 265
+      },
+      "evaluation": {
+        "expected": "abstain",
+        "pass": true,
+        "answer_found": false,
+        "completeness": 0.85,
+        "keywords_matched": null,
+        "keywords_missing": [],
+        "refusal_detected": true,
+        "risk_hallucination": false
+      }
+    },
+    {
+      "id": "u02",
+      "question": "Какого типа Vesperkin Cairvaxthyn, во что он эволюционирует и на каком уровне?",
+      "expect": "abstain",
+      "must_mention": null,
+      "answer": "<thinking>\n1. Examining the documents for information about Cairvaxthyn.\n2. No information about Cairvaxthyn's type, evolution, or evolution level is found in the provided documents.\n3. Answer - I don't know.</thinking>\n\nI don't know.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:44:01.272316+00:00",
+        "query": "Какого типа Vesperkin Cairvaxthyn, во что он эволюционирует и на каком уровне?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "legendary_pokemon.md",
+          "electric_type.md",
+          "charizard.md"
+        ],
+        "answer_length": 234
+      },
+      "evaluation": {
+        "expected": "abstain",
+        "pass": true,
+        "answer_found": false,
+        "completeness": 0.85,
+        "keywords_matched": null,
+        "keywords_missing": [],
+        "refusal_detected": true,
+        "risk_hallucination": false
+      }
+    },
+    {
+      "id": "u03",
+      "question": "Кто является чемпионом региона Kalos в основной линии игр Vesperkin?",
+      "expect": "abstain",
+      "must_mention": null,
+      "answer": "<thinking>\n1. Examining the documents for information about the champion of the Kalos region.\n2. The documents do not directly mention the champion of the Kalos region in the Vesperkin series.\n3. Answer - I don't know.</thinking>\nI don't know.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:44:03.042299+00:00",
+        "query": "Кто является чемпионом региона Kalos в основной линии игр Vesperkin?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "ash_ketchum.md",
+          "pokemon_trainer.md",
+          "james.md"
+        ],
+        "answer_length": 243
+      },
+      "evaluation": {
+        "expected": "abstain",
+        "pass": true,
+        "answer_found": false,
+        "completeness": 0.85,
+        "keywords_matched": null,
+        "keywords_missing": [],
+        "refusal_detected": true,
+        "risk_hallucination": false
+      }
+    },
+    {
+      "id": "u04",
+      "question": "Опиши типы, способности и роль легендарного Vesperkin Niayeltrel в сюжете серии.",
+      "expect": "abstain",
+      "must_mention": null,
+      "answer": "```\n<thinking>\n1. Examining the documents for information about Niayeltrel.\n2. No specific details about Niayeltrel's type, abilities, or role in the series were found in the provided documents.\n3. Answer - I don't know.</thinking>\n\nI don't know.\n```",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:44:04.778525+00:00",
+        "query": "Опиши типы, способности и роль легендарного Vesperkin Niayeltrel в сюжете серии.",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "ash_ketchum.md",
+          "james.md",
+          "legendary_pokemon.md",
+          "eevee.md"
+        ],
+        "answer_length": 250
+      },
+      "evaluation": {
+        "expected": "abstain",
+        "pass": true,
+        "answer_found": false,
+        "completeness": 0.85,
+        "keywords_matched": null,
+        "keywords_missing": [],
+        "refusal_detected": true,
+        "risk_hallucination": false
+      }
+    },
+    {
+      "id": "u05",
+      "question": "Какие три стартовых Vesperkin предлагаются игроку в регионе Amberreach и кто их профессор?",
+      "expect": "abstain",
+      "must_mention": null,
+      "answer": "<thinking>\n1. Examining the documents for information about the starter Vesperkin in Amberreach.\n2. The documents do not mention the starter Vesperkin in Amberreach or the professor associated with them.\n3. Answer - I don't know.</thinking>\n\nI don't know.",
+      "bot": {
+        "timestamp_utc": "2026-04-13T10:44:06.465053+00:00",
+        "query": "Какие три стартовых Vesperkin предлагаются игроку в регионе Amberreach и кто их профессор?",
+        "chunks_found": true,
+        "chunk_count": 4,
+        "sources": [
+          "gym_leader.md",
+          "professor_oak.md"
+        ],
+        "answer_length": 255
+      },
+      "evaluation": {
+        "expected": "abstain",
+        "pass": true,
+        "answer_found": false,
+        "completeness": 0.85,
+        "keywords_matched": null,
+        "keywords_missing": [],
+        "refusal_detected": true,
+        "risk_hallucination": false
+      }
+    }
+  ]
+}
